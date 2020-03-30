@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="max"></p>
+<br>
+<p id="min"></p>
+<br>
+<p id="sum"></p>
+
+
+<script>
+let firstArrSize = +prompt("Enter first array size");
+let Array1 = [];
+let max;
+let min;
+let sum = 0;
+for (let i=0; i < firstArrSize; i++) {
+    Array1[i] =+prompt("Enter the number");
+} 
+
+max = Array1[0];
+
+for(let k=0; k<firstArrSize; k++)
+{
+    if (Array1[k] > max)
+    {
+        max = Array1[k];
+    }
+    document.getElementById("max").innerHTML = max;
+}
+
+min = Array1[0];
+
+for(let j=0; j<firstArrSize; j++)
+{
+    if (Array1[j] < min)
+    {
+        min = Array1[j];
+    }
+    document.getElementById("min").innerHTML = min;
+}
+
+for(let k=0; k<firstArrSize; k++)
+{
+        sum += Array1[k];
+}
+document.getElementById("sum").innerHTML = sum;
+
+for(let k=0; k<firstArrSize; k++)
+{
+        sum += Array1[k];
+}
+document.getElementById("sum").innerHTML = sum;
+
+
+
+
+
+</script>
+
+</body>
+</html>
